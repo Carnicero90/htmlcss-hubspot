@@ -1,4 +1,5 @@
 /* RESET */
+
 * {
     padding: 0;
     margin: 0;
@@ -18,32 +19,36 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
 /* COMMON */
+
 .wrapper {
     width: 80%;
     margin: auto;
 }
-.float-container::after  {
+
+.float-container::after {
     content: "";
     display: table;
     clear: both;
 }
+
 .floater {
     float: left;
 }
+
 .floater:last-child {
     /* prova-prova */
     text-align: right;
 }
 
-
 .btn {
     color: white;
     background-color: #fe775a;
     /* TEST */
-   
     border-radius: 5px;
 }
+
 .two-cols {
     width: 50%;
 }
@@ -56,31 +61,30 @@ p {
     /* TEST */
     margin-top: 30px;
 }
+
 /* END COMMON */
 
 /* HEADER */
+
 header li {
     display: inline-block;
 }
 
 nav {
     vertical-align: middle;
-
     line-height: 30px;
 }
 
 .top-nav {
     background-color: #f4f9fd;
     border-bottom: 1px solid #32495b;
-
 }
 
 nav .logo {
-   width: auto;
-   display: inline-block;
-   /* TEST */
-   height: 30px;
-
+    width: auto;
+    display: inline-block;
+    /* TEST */
+    height: 30px;
 }
 
 .jumbotron {
@@ -91,7 +95,6 @@ nav .logo {
     /* TEST */
     height: 390px;
     background-position: 100% 150%;
-
 }
 
 .text-container {
@@ -101,31 +104,40 @@ nav .logo {
 
 .stripe {
     /* TEST */
-    background-color:#afebe4;
+    background-color: #afebe4;
     border-top: 3px solid #33475b;
     border-bottom: 3px solid #33475b;
     height: 50px;
 }
+
 /* END HEADER */
 
 /* MAIN */
+
 /* SECTION our-offer */
+
 .our-offer {
     background-color: #f4f9fd;
 }
+
 /* our-offer>slogan */
+
 .slogan {
     /* TEST */
     width: 80%;
     margin: auto;
     text-align: center;
 }
+
 .slogan img {
     /* TEST */
     height: 90px;
 }
+
 /* /our-offer>slogan */
+
 /* our-offer>offer-detail */
+
 .offer-detail {
     /* TEST */
     background-color: white;
@@ -139,12 +151,15 @@ nav .logo {
 }
 
 /* results */
+
 .results {
     color: white;
     /* TEST */
     background-color: blue;
 }
+
 /* end results */
+
 /* END MAIN */
 
 /* FOOTER */
