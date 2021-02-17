@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+img {
+    display: block;
+    margin: auto;
+}
+
 li {
     list-style-type: none;
 }
@@ -66,11 +71,16 @@ nav {
 
 .top-nav {
     background-color: #f4f9fd;
+    border-bottom: 1px solid #32495b;
+
 }
 
 nav .logo {
-   height: 30px;
    width: auto;
+   display: inline-block;
+   /* TEST */
+   height: 30px;
+
 }
 
 .jumbotron {
@@ -107,7 +117,7 @@ nav .logo {
 .slogan {
     /* TEST */
     width: 80%;
-    margin:  auto;
+    margin: auto;
     text-align: center;
 }
 .slogan img {
@@ -118,15 +128,23 @@ nav .logo {
 /* our-offer>offer-detail */
 .offer-detail {
     /* TEST */
-    height: 150px;
     background-color: white;
     box-shadow: 0 0 11px #eaf0f6;
+    text-align: center;
 }
 
 .offer-detail img {
     /* TEST */
     height: 100px;
 }
+
+/* results */
+.results {
+    color: white;
+    /* TEST */
+    background-color: blue;
+}
+/* end results */
 /* END MAIN */
 
 /* FOOTER */
