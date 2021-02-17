@@ -33,6 +33,11 @@ a {
 .two-cols {
     width: 50%;
 }
+
+p {
+    /* TEST */
+    margin-top: 30px;
+}
 /* END COMMON */
 
 /* HEADER */
@@ -73,14 +78,29 @@ nav .logo {
 
 .stripe {
     /* TEST */
-    background-color: green;
-    border: 2px solid rgb(15, 43, 15);
+    background-color:#afebe4;
+    border-top: 3px solid #33475b;
+    border-bottom: 3px solid #33475b;
     height: 50px;
 }
 /* END HEADER */
 
 /* MAIN */
-
+/* SECTION our-offer */
+.our-offer {
+    background-color: #f4f9fd;
+}
+/* our-offer>slogan */
+.slogan {
+    /* TEST */
+    width: 80%;
+    margin:  auto;
+    text-align: center;
+}
+.slogan img {
+    /* TEST */
+    height: 90px;
+}
 /* END MAIN */
 
 /* FOOTER */
