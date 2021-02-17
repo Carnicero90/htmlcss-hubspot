@@ -1,0 +1,88 @@
+/* RESET */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+/* COMMON */
+.wrapper {
+    width: 80%;
+    margin: auto;
+}
+.float-container::after  {
+    content: "";
+    display: table;
+    clear: both;
+}
+.floater {
+    float: left;
+}
+.floater:last-child {
+    /* prova-prova */
+    text-align: right;
+}
+
+.two-cols {
+    width: 50%;
+}
+/* END COMMON */
+
+/* HEADER */
+header li {
+    display: inline-block;
+}
+
+nav {
+    vertical-align: middle;
+
+    line-height: 30px;
+}
+
+.top-nav {
+    background-color: #f4f9fd;
+}
+
+nav .logo {
+   height: 30px;
+   width: auto;
+}
+
+.jumbotron {
+    background-image: url("../img/jumbotron.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #fff4ef;
+    /* TEST */
+    height: 390px;
+    background-position: 100% 150%;
+
+}
+
+.text-container {
+    width: 50%;
+    padding-top: 10%;
+}
+
+.stripe {
+    /* TEST */
+    background-color: green;
+    border: 2px solid rgb(15, 43, 15);
+    height: 50px;
+}
+/* END HEADER */
+
+/* MAIN */
+
+/* END MAIN */
+
+/* FOOTER */
+
+/* END FOOTER */
