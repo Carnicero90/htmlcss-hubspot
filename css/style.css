@@ -4,6 +4,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 li {
     list-style-type: none;
 }
@@ -30,6 +31,14 @@ a {
     text-align: right;
 }
 
+
+.btn {
+    color: white;
+    background-color: #fe775a;
+    /* TEST */
+   
+    border-radius: 5px;
+}
 .two-cols {
     width: 50%;
 }
@@ -112,6 +121,11 @@ nav .logo {
     height: 150px;
     background-color: white;
     box-shadow: 0 0 11px #eaf0f6;
+}
+
+.offer-detail img {
+    /* TEST */
+    height: 100px;
 }
 /* END MAIN */
 
