@@ -1,5 +1,18 @@
 /* TEST */
 
+.results .floater {
+    height: 200px;
+    width: 25%;
+    /* border: 1px solid white; */
+}
+.results .float-container:last-of-type {
+    border-top: 1px solid white;
+}
+
+.results .floater:nth-child(1n+2) {
+    border-left: 1px solid white;
+}
+
 body {
     color: #33475b;
     line-height: 160%;
@@ -136,7 +149,7 @@ nav li, footer li, .logo {
     content: "\f078";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    vertical-align: middle;
+    /* vertical-align: middle; */
     /* TEST */
     /* font-size: 115%; */
     padding-left: 10px;
