@@ -1,5 +1,8 @@
 /* TEST */
 
+.text-container {
+    margin: 0;
+}
 .test {
     text-align: center;
 }
@@ -19,7 +22,7 @@ h2 {
 
 * {
     padding: 0;
-    margin: 0;
+    margin: auto;
     box-sizing: border-box;
     vertical-align: middle;
 }
@@ -44,7 +47,6 @@ body {
 
 img {
     display: block;
-    margin: auto;
 }
 
 .logo {
@@ -54,14 +56,13 @@ img {
 .wrapper {
     padding: 25px 0;
     width: 80%;
-    margin: auto;
 }
 
 li {
     display: inline-block;
 }
 
-.offer-detail  .three-cols li, .footer .links li {
+.offer-detail .three-cols li, .footer .links li {
     display: list-item;
 }
 
@@ -232,7 +233,6 @@ li:last-child {
 .slogan {
     /* TEST */
     width: 80%;
-    margin: auto;
 }
 
 .slogan img {
@@ -270,7 +270,7 @@ li:last-child {
     margin-bottom: 20px;
 }
 
-.fullscreen-offer h4, .fullscreen-offer .bar {
+.fullscreen-offer h4 {
     display: inline-block;
 }
 
@@ -281,10 +281,10 @@ li:last-child {
     border-radius: 7px;
 }
 
-/* magari poi metto classe? */
 .offer-detail h3 {
     padding-top: 25px;
 }
+
 .offer-detail h4 {
     text-transform: uppercase;
 }
@@ -297,7 +297,6 @@ li:last-child {
     display: inline-block;
     border: 1px solid #899397;
     width: 90%;
-    margin: auto;
 }
 
 /* /our-offer>offer-detail */
@@ -306,7 +305,6 @@ li:last-child {
 
 .partner {
     width: 85%;
-    margin: auto;
 }
 
 /* /partners */
@@ -384,11 +382,6 @@ footer h5 {
     font-size: 120%;
     margin-bottom: 20px;
 }
-
-/* .languages {
-    text-align: center;
-    text-transform: capitalize;
-} */
 
 .languages {
     margin-top: 30px;
