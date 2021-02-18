@@ -17,45 +17,48 @@
 <body>
     <!-- HEADER -->
     <header>
+        <!-- top-nav -->
         <nav class="top-nav">
             <div class="wrapper">
-
                 <div class="float-container">
                     <div class="floater two-cols">
                         <ul>
                             <li><a href=""><i class="fas fa-globe-europe"></i> English</a></li>
-                            <li><a href="">Contact Us</a></li>
+                            <li class="dropdown"><a href="">Contact Us</a></li>
                         </ul>
                     </div>
                     <div class="floater two-cols">
                         <ul>
-                            <li><a href=""><i class="fas fa-search"></i></a></li>
-                            <li class="btn"><a href="">Log In</a></li>
+                            <li id="search"><a href=""><i class="fas fa-search"></i></a></li>
+                            <li class="btn log-btn"><a href="">Log In</a></li>
                             <li class="btn"><a href="#">GetHubspotFree</a></li>
                         </ul>
                     </div>
                 </div>
-
             </div>
-
         </nav>
+        <!-- /top-nav -->
 
-        <div class="wrapper">
-            <nav class="logo-nav">
+        <!-- logo-nav -->
+        <nav class="logo-nav">
+            <div class="wrapper">
                 <div class="float-container">
-                    <div class="floater two-cols"> <img src="img/logo.svg" alt="logo" class="logo"></div>
+                    <div class="floater two-cols">
+                        <img src="img/logo.svg" alt="logo" class="logo">
+                    </div>
                     <div class="floater two-cols">
                         <ul>
-                            <li><a href="">Software</a></li>
-                            <li><a href="">Pricing</a></li>
-                            <li><a href="">Resources</a></li>
+                            <li class="dropdown"><a href="">Software</a></li>
+                            <li class="dropdown"><a href="">Pricing</a></li>
+                            <li class="dropdown"><a href="">Resources</a></li>
                             <li><a href="">Partners</a></li>
-                            <li><a href="">About</a></li>
+                            <li class="dropdown"><a href="">About</a></li>
                         </ul>
                     </div>
                 </div>
-            </nav>
-        </div>
+            </div>
+        </nav>
+        <!-- /logo-nav -->
 
         <section class="jumbotron">
             <div class="wrapper">
@@ -64,101 +67,123 @@
                     <p>Marketing, sales, and service software that helps your business grow without compromise. Because
                         “good for the business” should also mean “good for the customer.”</p>
                     <a class="btn" href="">Get HubSpot free</a>
-                    <p>Get started with FREE tools, and upgrade as you grow.</p>
+                    <p class="sub-button">Get started with FREE tools, and upgrade as you grow.</p>
                 </div>
             </div>
             <div class="stripe"></div>
         </section>
-        
+
 
     </header>
     <!-- END HEADER -->
 
     <!-- MAIN -->
-    <section class="our-offer">
-        <div class="wrapper">
-            <div class="slogan">
-                <img src="img/integrations_illustration.webp" alt="cube">
-                <h2>Powerful Alone. Better Togehter.</h2>
-                <p>blabla</p>
-            </div>
+    <main>
+        <section class="our-offer">
+            <div class="wrapper">
+                <div class="slogan">
+                    <img src="img/integrations_illustration.webp" alt="cube">
+                    <h2>Powerful Alone. Better Togehter.</h2>
+                    <p>HubSpot offers a full stack of software for marketing, sales, and customer service, with a
+                        completely free CRM at its core. They're powerful alone - but even better when used together.
+                    </p>
+                    <!-- Fooorse la barretta nel p precedente è un simbolo strano -->
+                </div>
 
-            <div class="offer-detail">
-                <div class="float-container">
-                    <!-- two-cols è test, poi togli -->
-                    <div class="floater two-cols"><img src="img/crm-Illustration.svg" alt="book">
-                        <a href="" class="btn">Learn More</a>
+                <div class="offer-detail">
+                    <div class="fullscreen-offer">
+                    <div class="float-container">
+                        <!-- two-cols è test, poi togli -->
+                        <div class="floater two-cols"><img src="img/crm-Illustration.svg" alt="book">
+                            <a href="" class="btn">Learn More</a>
+                        </div>
+                        <div class="floater two-cols">
+                            <h3>Free HubSpot CRM</h3>
+                            <p>Everything you need to organize, track, etcetc</p>
+                            <div class="float-container">
+                                <div class="floater two-cols"><h4>popular feature</h4></div>
+                                <div class="floater two-cols"><div class="bar"></div></div>
+                            </div>
+                            
+                            <ul>
+                                <li>Contact Insight</li>
+                                <li>Deals</li>
+                                <li>Tasks</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="floater two-cols">
-                        <h3>Free HubSpot CRM</h3>
-                        <p>Everything you need to organize, track, etcetc</p>
+                </div>
+
+                    <div class="float-container">
+                        <div class="floater  three-cols">
+                            <div class="offer-detail"><img src="img/marketing-hub-free.svg" alt="">
+                                <h3>Marketing Hub</h3>
+                                <p>Marketing software to help you grow traffic, convert more visitors, and run complete
+                                    inbound
+                                    marketing campaigns at scale.</p>
+                                <div class="bar"></div>
+                                <h4>Popular feature</h4>
+                                <ul>
+                                    <li>Lead Generation</li>
+                                    <li>Marketing Automation</li>
+                                    <li>Analytics</li>
+                                </ul>
+                                <a href="" class="btn">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="floater three-cols">
+                            <div class="offer-detail"><img src="img/sales-professional-illustration.svg" alt="">
+                                <h3>Sales Hub</h3>
+                                <p>Time-saving sales software that helps you get deeper insights into prospects,
+                                    automate
+                                    the
+                                    tasks you hate, and close more deals faster.</p>
+                                <div class="bar"></div>
+                                <h4>Popular feature</h4>
+                                <ul>
+                                    <li>Email Tracking</li>
+                                    <li>Meeting Scheduling</li>
+                                    <li>Email Automation</li>
+                                </ul>
+                                <a href="" class="btn">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="floater three-cols">
+                            <div class="offer-detail"><img src="img/service-hub-illustration.svg" alt="">
+                                <h3>Service Hub</h3>
+                                <p>Customer service software to help you connect with customers, exceed expectations,
+                                    and
+                                    turn
+                                    them into promoters who grow your business.</p>
+                                <div class="bar"></div>
+                                <h4>Popular feature</h4>
+                                <ul>
+                                    <li>Tickets</li>
+                                    <li>Customer Feedback</li>
+                                    <li>Knowledge Base</li>
+                                </ul>
+                                <a href="" class="btn">Learn More</a>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="float-container">
-                <div class="floater  three-cols">
-                    <div class="offer-detail"><img src="img/marketing-hub-free.svg" alt="">
-                        <h3>Marketing Hub</h3>
-                        <p>Marketing software to help you grow traffic, convert more visitors, and run complete inbound
-                            marketing campaigns at scale.</p>
-                        <hr>
-                        <h4>Popular feature</h4>
-                        <ul>
-                            <li>Lead Generation</li>
-                            <li>Marketing Automation</li>
-                            <li>Analytics</li>
-                        </ul>
-                        <a href="" class="btn">Learn More</a>
-                    </div>
-                </div>
-                <div class="floater three-cols">
-                    <div class="offer-detail"><img src="img/sales-professional-illustration.svg" alt="">
-                        <h3>Sales Hub</h3>
-                        <p>Time-saving sales software that helps you get deeper insights into prospects, automate the
-                            tasks you hate, and close more deals faster.</p>
-                        <hr>
-                        <h4>Popular feature</h4>
-                        <ul>
-                            <li>Email Tracking</li>
-                            <li>Meeting Scheduling</li>
-                            <li>Email Automation</li>
-                        </ul>
-                        <a href="" class="btn">Learn More</a>
-                    </div>
-                </div>
-                <div class="floater three-cols">
-                    <div class="offer-detail"><img src="img/service-hub-illustration.svg" alt="">
-                        <h3>Service Hub</h3>
-                        <p>Customer service software to help you connect with customers, exceed expectations, and turn
-                            them into promoters who grow your business.</p>
-                        <hr>
-                        <h4>Popular feature</h4>
-                        <ul>
-                            <li>Tickets</li>
-                            <li>Customer Feedback</li>
-                            <li>Knowledge Base</li>
-                        </ul>
-                        <a href="" class="btn">Learn More</a>
+        </section>
 
-                    </div>
-                </div>
+        <section class="results">
+            <div class="wrapper">
+                <h2>Learn and grow with award-winning support and a thriving community behind you.</h2>
+                <p>You don't have to go it alone. Master the inbound methodology and get the most out of your tools with
+                    HubSpot's legendary customer support team and a community of thousands of marketing and sales pros
+                    just
+                    like you.</p>
+                <h1 style="color: red">qua faccio dopo, troooppe alternative altrettanto valide e devo decidere</h1>
             </div>
-        </div>
-    </section>
 
-    <section class="results">
-        <div class="wrapper">
-            <h2>Learn and grow with award-winning support and a thriving community behind you.</h2>
-            <p>You don't have to go it alone. Master the inbound methodology and get the most out of your tools with
-                HubSpot's legendary customer support team and a community of thousands of marketing and sales pros just
-                like you.</p>
-            <h1 style="color: red">qua faccio dopo, troooppe alternative altrettanto valide e devo decidere</h1>
-        </div>
+        </section>
 
-    </section>
-
-    <section class="partner">
-        <div class="wrapper">
+        <section class="partner">
             <!-- qua da vedere, tendenzialmente centro solo via padding, non so ancora -->
             <div class="float-container">
                 <div class="floater two-cols">
@@ -166,32 +191,62 @@
                     <!-- poi togli h2 e fai via font-size -->
                     <p>customers in over <b>100</b> countries growing their business with HubSpot</p>
                 </div>
-                <div class="floater two-cols">altro testo prova</div>
-            </div>
-        </div>
-    </section>
-    <section class="final-spot">
-        <div class="wrapper">
-            <div class="float-container">
                 <div class="floater two-cols">
-                    <h2>Start Growing With HubSpot Today</h2>
-                    <p>With tools to make every part of your process more human and a support team excited to help you,
-                        getting started with inbound has never been easier.</p>
-                    <a href="" class="btn">GetHubspotFree</a>
-                    <p>Get started with FREE tools, or get more with our premium software.</p>
-                </div>
-                <div class="floater two-cols"><img src="img/woman.webp" alt="happy woman">
+                    <img src="img/atlassian-horizontal-blue.webp" alt="">
+                    <img src="img/doordash_owler.webp" alt="">
+                    <img src="img/g2crowd-logo.webp" alt="">
+                    <img src="img/purple-logo.webp" alt="">
+                    <img src="img/subaru_logo.webp" alt="">
+                    <img src="img/wistia_logo.webp" alt="">
+                    <img src="img/classpass-logo.webp" alt="">
+                    <img src="img/vmware_logo_gry_rgb_300dpi.webp" alt="">
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <section class="final-spot">
+            <div class="wrapper">
+                <div class="text-container">
+                    <h2>Start Growing With HubSpot Today</h2>
+                    <p>With tools to make every part of your process more human and a support team excited to help
+                        you,
+                        getting started with inbound has never been easier.</p>
+                    <a href="#" class="btn">GetHubspotFree</a>
+                    <p class="sub-button">Get started with FREE tools, or get more with our premium software.</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
 
     <!-- END MAIN -->
 
     <!-- FOOTER -->
     <footer>
-
+        <section class="languages">
+            <ul>
+                <li>English</li>
+                <li>Deutsch</li>
+                <li>cino</li>
+                <li>spano</li>
+                <li>franco</li>
+                <li>porto</li>
+            </ul>
+        </section>
+        <div class="wrapper">
+            <!-- footer finale, per ora copincollo e stop -->
+            <div class="float-container nav-logo">
+                <div class="floater two-cols">
+                    <img src="img/hslogo_gray.svg" alt="logo" class="logo">
+                    <span>Copyright 2019 HubSpot, Inc.</span>
+                </div>
+                <div class="floater two-cols">
+                    <ul>
+                        <li><a href="">Legal Stuff</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </footer>
     <!-- END FOOTER -->
 </body>
