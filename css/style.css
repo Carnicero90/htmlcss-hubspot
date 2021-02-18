@@ -1,5 +1,29 @@
 /* TEST */
 
+.infotext {
+    visibility: hidden;
+    width: 10em;
+    background-color: #f4f9fd;
+    padding: 2% 0;
+    border: 1px solid  #33475b;
+    border-radius: 0.5em;
+    text-align: center;
+    position: absolute;
+    bottom: -50%;
+    left: 0%;
+    transform: translate(0, +40%);
+/* roba recuperata dal mio esercizio sulle scarpe */
+}
+
+
+
+.dropdown {
+    position: relative;
+}
+.dropdown:hover .infotext {
+    visibility: visible;
+}
+
 h2 {
     text-transform: capitalize;
 }
@@ -72,16 +96,12 @@ img {
     clear: both;
 }
 
-.two-cols:first-of-type {
-    width: 30%;
-    margin-right: 5%;
-}
-
 .two-cols:last-of-type {
     width: 65%;
+    margin-left: 5%;
 }
 
-.three-cols {
+.two-cols:first-of-type, .three-cols {
     width: 30%;
 }
 
@@ -97,7 +117,7 @@ img {
 
 .btn {
     background-color: #fe775a;
-    /* TEST */
+    margin: 20px 0;
     padding: 10px 20px;
     border-radius: 5px;
 }
@@ -168,6 +188,7 @@ li:last-child {
 
 .top-nav .btn {
     padding: 0 10px;
+    margin: 0;
 }
 
 .divided::after {
@@ -284,12 +305,12 @@ li:last-child {
 /* partners */
 
 .partner {
-    width: 85%;
+    width: 90%;
 }
 
 .partner img {
-    width: 18%;
-    margin-right: 5%;
+    padding: 10px 0;
+    width: 20%;
 }
 
 /* /partners */
@@ -334,8 +355,8 @@ li:last-child {
 .final-spot {
     background-image: url("../img/woman.webp");
     background-repeat: no-repeat;
-    background-size: contain;
-    /* background-size: 300px; */
+    /* background-size: contain; */
+    background-size: 300px;
     /* TEST */
     background-position: 100% 100%;
     padding-bottom: 40px;
