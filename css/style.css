@@ -52,6 +52,11 @@ body {
     line-height: 160%;
 }
 
+img {
+    display: block;
+    margin: auto;
+}
+
 .wrapper {
     padding: 25px 0;
     width: 80%;
@@ -100,7 +105,6 @@ body {
     display: inline-block;
     padding: 10px 20px;
     border-radius: 5px;
-    /* poi tendenzialmente sovrascrivo per bottoni in nav e footer */
 }
 
 /* comune a didascalia a btn gethubspotfree e didascalia numeri in .results*/
@@ -124,10 +128,8 @@ p {
 
 /* HEADER */
 
-/* FIX */
-
 header {
-    /* margin-top: 90px; */
+    margin-top: 90px;
 }
 
 /* Navbar */
@@ -168,25 +170,28 @@ li:last-child {
     background-color: #f4f9fd;
     border-bottom: 1px solid #32495b;
     /* padding: 15px 0; */
-    /* FIX */
-    /* position: fixed;
+    position: fixed;
     top: 0;
-    left: 0; 
+    left: 0;
     width: 100%;
-    z-index: 1; */
+    z-index: 1;
 }
 
 .top-nav .btn {
     padding: 0 10px;
 }
 
-.top-nav .two-cols:first-of-type li:first-of-type::after {
-    padding-right: 15px;
+.test2::after {
     border-right: 2px solid #32495b;
-    margin-right: 15px;
 }
 
 nav .floater:last-child {
+    text-align: right;
+}
+
+/* test */
+
+.nav-logo .floater:last-child {
     text-align: right;
 }
 
@@ -228,11 +233,6 @@ nav .floater:last-child {
     background-color: #f4f9fd;
 }
 
-.our-offer img {
-    display: block;
-    margin: auto;
-}
-
 /* our-offer>slogan */
 
 .slogan {
@@ -252,6 +252,10 @@ nav .floater:last-child {
 
 .our-offer {
     text-align: center;
+}
+
+.our-offer ul {
+    padding-top: 30px;
 }
 
 .our-offer li::before {
@@ -306,7 +310,6 @@ nav .floater:last-child {
     border: 1px solid #899397;
     width: 90%;
     margin: auto;
-
 }
 
 /* /our-offer>offer-detail */
@@ -339,12 +342,10 @@ nav .floater:last-child {
 .results .four-cols * {
     display: block;
     margin-bottom: 20px;
-    
 }
 
 .results img {
     padding-top: 20px;
-    margin: auto;
 }
 
 .big-num {
@@ -381,6 +382,12 @@ footer {
     color: white;
 }
 
+footer .btn {
+    background-color: #dadee0;
+    color: #32495b;
+    padding: 3%;
+}
+
 /* .languages {
     text-align: center;
     text-transform: capitalize;
@@ -388,10 +395,21 @@ footer {
 
 .languages {
     border-bottom: 1px solid white;
+    text-align: center;
+}
+
+.languages li {
+    display: inline-block;
 }
 
 .social * {
     width: 18%;
+}
+
+/* reset */
+
+footer img {
+    margin: 0;
 }
 
 /* END FOOTER */
