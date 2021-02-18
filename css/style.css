@@ -1,33 +1,34 @@
 /* TEST */
 
-.results .floater {
-    height: 200px;
-    width: 25%;
+.test {
+    width: 100%;
+    margin: auto;
     text-align: center;
 }
-.results .float-container:last-of-type {
-    border-top: 1px solid white;
+.four-cols {
+    /* height: 200px; */
+    width: 25%;
 }
 
-.results .floater:nth-child(1n+2) {
-    border-left: 1px solid white;
+.results .four-cols {
+        text-align: center;
+
 }
 
 .results .floater * {
     display: block;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .results img {
     padding-top: 20px;
     display: block;
     margin: auto;
-
 }
 
 .results .big-num {
     /* TEST */
-    font-size: 300%;
+    font-size: 250%;
     font-weight: bolder;
 }
 
@@ -36,6 +37,7 @@
     font-size: 60%;
     vertical-align: middle;
 }
+
 body {
     color: #33475b;
     line-height: 160%;
@@ -71,7 +73,6 @@ h2 {
     box-sizing: border-box;
 }
 
-
 li {
     list-style-type: none;
 }
@@ -92,6 +93,10 @@ body {
     margin: auto;
 }
 
+main section {
+    padding: 20px 0;
+}
+
 .float-container::after {
     content: "";
     display: table;
@@ -101,20 +106,27 @@ body {
 .floater {
     float: left;
 }
+
 .btn {
     color: white;
     background-color: #fe775a;
     /* TEST */
     display: inline-block;
-    padding: 10px;
+    padding: 10px 20px;
     border-radius: 5px;
     /* poi tendenzialmente sovrascrivo per bottoni in nav e footer */
 }
 
+/* comune a didascalia a btn gethubspotfree e didascalia numeri in .results*/
+
+.caption {
+    font-size: 80%;
+}
 
 .two-cols:first-of-type {
     width: 35%;
 }
+
 .two-cols:last-of-type {
     width: 65%;
 }
@@ -135,28 +147,35 @@ body {
 
 p {
     /* TEST */
-    margin: 30px 0
-    ;
+    margin: 30px 0;
 }
 
 /* END COMMON */
 
 /* HEADER */
+
 /* FIX */
+
 header {
     /* margin-top: 90px; */
 }
+
 /* Navbar */
 
 nav {
     height: 90px;
     line-height: 40px;
-    padding:  25px 10px;
+    padding: 25px 10px;
 }
 
-nav li, footer li, .logo {
+nav li, .logo {
     display: inline-block;
     vertical-align: middle;
+    margin-right: 10px;
+}
+
+li:last-child {
+    margin-right: 0px;
 }
 
 #search {
@@ -168,6 +187,7 @@ nav li, footer li, .logo {
     color: #fe775a;
     border: 1px solid #fe775a;
 }
+
 .dropdown::after {
     content: "\f078";
     font-family: "Font Awesome 5 Free";
@@ -179,7 +199,6 @@ nav li, footer li, .logo {
 }
 
 /* peraltro questo mi sa che lo riuso, potenziale COMMON */
-
 
 .logo {
     width: 110px;
@@ -197,7 +216,7 @@ nav li, footer li, .logo {
     z-index: 1; */
 }
 
-.top-nav .btn { 
+.top-nav .btn {
     padding: 0 10px;
 }
 
@@ -254,10 +273,9 @@ nav .floater:last-child {
     margin: auto;
 }
 
-
 /* our-offer>slogan */
 
-.slogan, .languages{
+.slogan, .languages {
     /* TEST */
     width: 80%;
     margin: auto;
@@ -277,6 +295,7 @@ nav .floater:last-child {
     /* TEST */
     text-align: center;
 }
+
 .our-offer li::before {
     font-family: "Font Awesome 5 Free";
     content: "\f058";
@@ -284,6 +303,7 @@ nav .floater:last-child {
     color: #fe775a;
     margin-right: 4px;
 }
+
 .our-offer li {
     text-align: left;
 }
@@ -291,11 +311,12 @@ nav .floater:last-child {
 .fullscreen-offer {
     background-color: white;
 }
+
 .fullscreen-offer h4, .fullscreen-offer .bar {
     display: inline-block;
 }
 
-.offer-detail .three-cols, .fullscreen-offer{
+.offer-detail .three-cols, .fullscreen-offer {
     box-shadow: 0 0 11px #eaf0f6;
     background-color: white;
     padding: 3%;
@@ -338,7 +359,6 @@ nav .floater:last-child {
     margin: auto;
 }
 
-
 /* /our-offer>offer-detail */
 
 /* partners */
@@ -354,9 +374,20 @@ nav .floater:last-child {
 
 .results {
     color: white;
-    /* TEST */
-    background-color: blue;
+    background-image: linear-gradient(to right, #00a9ba, #00bba8);
 }
+
+.results .float-container:last-of-type {
+    border-top: 1px solid white;
+}
+
+.results .floater:nth-child(1n+2) {
+    border-left: 1px solid white;
+}
+
+/* /results */
+
+/* final-spot */
 
 .final-spot .wrapper {
     background-image: url("../img/woman.webp");
@@ -376,10 +407,10 @@ nav .floater:last-child {
 /* END MAIN */
 
 /* FOOTER */
+
 footer {
     background-color: #32495b;
     color: white;
-
     /* TEST */
     height: 400px;
 }
@@ -388,14 +419,15 @@ footer {
     text-align: center;
     text-transform: capitalize;
 } */
+
 /* spostato per ora assieme a slogan, fare classe */
 
 footer .floater:last-child {
     text-align: right;
 }
+
 /* END FOOTER */
 
-
- main .btn {
+main .btn {
     margin: 25px;
 }
