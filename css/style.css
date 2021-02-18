@@ -3,7 +3,7 @@
 .results .floater {
     height: 200px;
     width: 25%;
-    /* border: 1px solid white; */
+    text-align: center;
 }
 .results .float-container:last-of-type {
     border-top: 1px solid white;
@@ -13,6 +13,29 @@
     border-left: 1px solid white;
 }
 
+.results .floater * {
+    display: block;
+    margin-bottom: 30px;
+}
+
+.results img {
+    padding-top: 20px;
+    display: block;
+    margin: auto;
+
+}
+
+.results .big-num {
+    /* TEST */
+    font-size: 300%;
+    font-weight: bolder;
+}
+
+.big-num::after {
+    content: " +";
+    font-size: 60%;
+    vertical-align: middle;
+}
 body {
     color: #33475b;
     line-height: 160%;
