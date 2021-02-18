@@ -1,21 +1,7 @@
 /* TEST */
 
-.text-container {
-    margin: 0;
-}
-.test {
-    text-align: center;
-}
-
 h2 {
     text-transform: capitalize;
-}
-
-.partner img {
-    display: inline-block;
-    /* height: 50px; */
-    width: 18%;
-    margin-right: 5%;
 }
 
 /* RESET */
@@ -38,6 +24,18 @@ a {
 
 /* COMMON */
 
+li, .btn, .fullscreen-offer h4, .bar, .partner img {
+    display: inline-block;
+}
+
+.btn, footer, .results {
+    color: white;
+}
+
+.our-offer, .results, .languages, .test {
+    text-align: center;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     /* do colori e altezza righe di default all'interno di body, per praticità */
@@ -49,7 +47,7 @@ img {
     display: block;
 }
 
-.logo {
+.logo, .text-container {
     margin: 0;
 }
 
@@ -59,7 +57,6 @@ img {
 }
 
 li {
-    display: inline-block;
 }
 
 .offer-detail .three-cols li, .footer .links li {
@@ -102,10 +99,8 @@ li {
 /* /Common floating */
 
 .btn {
-    color: white;
     background-color: #fe775a;
     /* TEST */
-    display: inline-block;
     padding: 10px 20px;
     border-radius: 5px;
 }
@@ -167,7 +162,6 @@ li:last-child {
 .top-nav {
     background-color: #f4f9fd;
     border-bottom: 1px solid #32495b;
-    /* padding: 15px 0; */
     position: fixed;
     top: 0;
     left: 0;
@@ -179,11 +173,11 @@ li:last-child {
     padding: 0 10px;
 }
 
-.test2::after {
-    border-right: 2px solid #32495b;
+.divided::after {
+    content: '';
+    padding-right: 10px;
+    border-right: 1px solid #32495b;
 }
-
-/* test */
 
 .navbar .floater:last-child {
     text-align: right;
@@ -204,7 +198,7 @@ li:last-child {
 
 .text-container {
     width: 50%;
-    padding-top: 10%;
+    padding-top: 6%;
 }
 
 .stripe {
@@ -214,7 +208,6 @@ li:last-child {
     background-color: #afebe4;
     border-top: 3px solid #33475b;
     border-bottom: 3px solid #33475b;
-    /* TEST */
     height: 50px;
 }
 
@@ -244,10 +237,6 @@ li:last-child {
 
 /* our-offer>offer-detail */
 
-.our-offer {
-    text-align: center;
-}
-
 .our-offer ul {
     padding-top: 30px;
 }
@@ -260,19 +249,15 @@ li:last-child {
     margin-right: 4px;
 }
 
-.our-offer li {
+.our-offer li, .fullscreen-offer {
     text-align: left;
 }
 
 .fullscreen-offer {
     background-color: white;
-    text-align: left;
     margin-bottom: 20px;
 }
 
-.fullscreen-offer h4 {
-    display: inline-block;
-}
 
 .offer-detail .three-cols, .fullscreen-offer {
     box-shadow: 0 0 11px #eaf0f6;
@@ -294,7 +279,6 @@ li:last-child {
 }
 
 .bar {
-    display: inline-block;
     border: 1px solid #899397;
     width: 90%;
 }
@@ -306,15 +290,17 @@ li:last-child {
 .partner {
     width: 85%;
 }
+.partner img {
+    width: 18%;
+    margin-right: 5%;
+}
 
 /* /partners */
 
 /* results */
 
 .results {
-    color: white;
     background-image: linear-gradient(to right, #00a9ba, #00bba8);
-    text-align: center;
 }
 
 .results .float-container:last-of-type {
@@ -351,7 +337,8 @@ li:last-child {
 .final-spot {
     background-image: url("../img/woman.webp");
     background-repeat: no-repeat;
-    background-size: 300px;
+    background-size: contain;
+    /* background-size: 300px; */
     /* TEST */
     background-position: 100% 100%;
     padding-bottom: 40px;
@@ -365,7 +352,6 @@ li:last-child {
 
 footer {
     background-color: #32495b;
-    color: white;
 }
 
 footer .btn {
@@ -386,7 +372,6 @@ footer h5 {
 .languages {
     margin-top: 30px;
     border-bottom: 1px solid white;
-    text-align: center;
 }
 
 .social * {
