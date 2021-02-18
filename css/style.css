@@ -1,46 +1,7 @@
 /* TEST */
 
 .test {
-    width: 100%;
-    margin: auto;
     text-align: center;
-}
-.four-cols {
-    /* height: 200px; */
-    width: 25%;
-}
-
-.results .four-cols {
-        text-align: center;
-
-}
-
-.results .floater * {
-    display: block;
-    margin-bottom: 20px;
-}
-
-.results img {
-    padding-top: 20px;
-    display: block;
-    margin: auto;
-}
-
-.results .big-num {
-    /* TEST */
-    font-size: 250%;
-    font-weight: bolder;
-}
-
-.big-num::after {
-    content: " +";
-    font-size: 60%;
-    vertical-align: middle;
-}
-
-body {
-    color: #33475b;
-    line-height: 160%;
 }
 
 h2 {
@@ -52,7 +13,6 @@ h2 {
     /* height: 50px; */
     width: 18%;
     margin-right: 5%;
-    vertical-align: middle;
 }
 
 .partner .floater:first-of-type {
@@ -71,6 +31,7 @@ h2 {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    vertical-align: middle;
 }
 
 li {
@@ -86,15 +47,21 @@ a {
 
 body {
     font-family: 'Roboto', sans-serif;
+    /* do colori e altezza righe di default all'interno di body, per praticità */
+    color: #33475b;
+    line-height: 160%;
 }
 
 .wrapper {
+    padding: 25px 0;
     width: 80%;
     margin: auto;
 }
 
-main section {
-    padding: 20px 0;
+/* Common floating */
+
+.floater {
+    float: left;
 }
 
 .float-container::after {
@@ -103,9 +70,28 @@ main section {
     clear: both;
 }
 
-.floater {
-    float: left;
+.two-cols:first-of-type {
+    width: 30%;
+    margin-right: 5%;
 }
+
+.two-cols:last-of-type {
+    width: 65%;
+}
+
+.three-cols {
+    width: 30%;
+}
+
+.three-cols:nth-of-type(2) {
+    margin: 0 5%;
+}
+
+.four-cols {
+    width: 25%;
+}
+
+/* /Common floating */
 
 .btn {
     color: white;
@@ -121,22 +107,6 @@ main section {
 
 .caption {
     font-size: 80%;
-}
-
-.two-cols:first-of-type {
-    width: 35%;
-}
-
-.two-cols:last-of-type {
-    width: 65%;
-}
-
-.three-cols {
-    width: 30%;
-}
-
-.three-cols:nth-of-type(2) {
-    margin: 0 5%;
 }
 
 /* Common-text */
@@ -165,12 +135,11 @@ header {
 nav {
     height: 90px;
     line-height: 40px;
-    padding: 25px 10px;
+    padding: 0 10px;
 }
 
 nav li, .logo {
     display: inline-block;
-    vertical-align: middle;
     margin-right: 10px;
 }
 
@@ -192,16 +161,7 @@ li:last-child {
     content: "\f078";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    /* vertical-align: middle; */
-    /* TEST */
-    /* font-size: 115%; */
     padding-left: 10px;
-}
-
-/* peraltro questo mi sa che lo riuso, potenziale COMMON */
-
-.logo {
-    width: 110px;
 }
 
 .top-nav {
@@ -275,11 +235,10 @@ nav .floater:last-child {
 
 /* our-offer>slogan */
 
-.slogan, .languages {
+.slogan {
     /* TEST */
     width: 80%;
     margin: auto;
-    text-align: center;
 }
 
 .slogan img {
@@ -291,8 +250,7 @@ nav .floater:last-child {
 
 /* our-offer>offer-detail */
 
-.offer-detail .three-cols {
-    /* TEST */
+.our-offer {
     text-align: center;
 }
 
@@ -310,6 +268,12 @@ nav .floater:last-child {
 
 .fullscreen-offer {
     background-color: white;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.fullscreen-offer li {
+    display: inline-block;
 }
 
 .fullscreen-offer h4, .fullscreen-offer .bar {
@@ -321,23 +285,9 @@ nav .floater:last-child {
     background-color: white;
     padding: 3%;
     border-radius: 5px;
-    /* margin-bottom: 40px; */
-}
-
-.offer-detail .float-container:last-of-type {
-    padding: 30px 0;
 }
 
 /* magari poi metto classe? */
-
-.offer-detail .two-cols:last-of-type {
-    text-align: left;
-    /* TEST */
-}
-
-.offer-detail .two-cols:last-of-type li {
-    display: inline-block;
-}
 
 .offer-detail h4 {
     text-transform: uppercase;
@@ -353,10 +303,10 @@ nav .floater:last-child {
 
 .bar {
     display: inline-block;
-    /* TEST */
     border: 1px solid #899397;
     width: 90%;
     margin: auto;
+
 }
 
 /* /our-offer>offer-detail */
@@ -364,7 +314,7 @@ nav .floater:last-child {
 /* partners */
 
 .partner {
-    width: 70%;
+    width: 85%;
     margin: auto;
 }
 
@@ -375,6 +325,7 @@ nav .floater:last-child {
 .results {
     color: white;
     background-image: linear-gradient(to right, #00a9ba, #00bba8);
+    text-align: center;
 }
 
 .results .float-container:last-of-type {
@@ -385,22 +336,39 @@ nav .floater:last-child {
     border-left: 1px solid white;
 }
 
+.results .four-cols * {
+    display: block;
+    margin-bottom: 20px;
+    
+}
+
+.results img {
+    padding-top: 20px;
+    margin: auto;
+}
+
+.big-num {
+    font-size: 250%;
+    font-weight: bolder;
+}
+
+.big-num::after {
+    content: " +";
+    font-size: 60%;
+}
+
 /* /results */
 
 /* final-spot */
 
-.final-spot .wrapper {
+.final-spot {
     background-image: url("../img/woman.webp");
     background-repeat: no-repeat;
-    /* background-size: contain; */
+    background-size: 300px;
     /* TEST */
     background-position: 100% 100%;
     padding-bottom: 40px;
-    height: 400px;
-    background-size: 300px;
 }
-
-/* l'immagine poi magari spostala, che non la vuoi "legata" al wrapper */
 
 /* end results */
 
@@ -411,8 +379,6 @@ nav .floater:last-child {
 footer {
     background-color: #32495b;
     color: white;
-    /* TEST */
-    height: 400px;
 }
 
 /* .languages {
@@ -420,14 +386,12 @@ footer {
     text-transform: capitalize;
 } */
 
-/* spostato per ora assieme a slogan, fare classe */
+.languages {
+    border-bottom: 1px solid white;
+}
 
-footer .floater:last-child {
-    text-align: right;
+.social * {
+    width: 18%;
 }
 
 /* END FOOTER */
-
-main .btn {
-    margin: 25px;
-}
