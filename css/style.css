@@ -56,9 +56,6 @@ img {
     width: 80%;
 }
 
-li {
-}
-
 .offer-detail .three-cols li, .footer .links li {
     display: list-item;
 }
@@ -134,7 +131,7 @@ nav {
     padding: 0 10px;
 }
 
-nav li {
+nav li, footer li {
     margin-right: 10px;
 }
 
@@ -258,7 +255,6 @@ li:last-child {
     margin-bottom: 20px;
 }
 
-
 .offer-detail .three-cols, .fullscreen-offer {
     box-shadow: 0 0 11px #eaf0f6;
     background-color: white;
@@ -290,6 +286,7 @@ li:last-child {
 .partner {
     width: 85%;
 }
+
 .partner img {
     width: 18%;
     margin-right: 5%;
@@ -360,10 +357,6 @@ footer .btn {
     padding: 3%;
 }
 
-footer * {
-    padding-right: 10px;
-}
-
 footer h5 {
     font-size: 120%;
     margin-bottom: 20px;
@@ -372,10 +365,6 @@ footer h5 {
 .languages {
     margin-top: 30px;
     border-bottom: 1px solid white;
-}
-
-.social * {
-    width: 18%;
 }
 
 /* END FOOTER */
