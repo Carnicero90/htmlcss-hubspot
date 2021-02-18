@@ -15,16 +15,6 @@ h2 {
     margin-right: 5%;
 }
 
-.partner .floater:first-of-type {
-    /* width: 20%;
-    margin-right: 20%; */
-}
-
-.partner .floater:last-of-type {
-    /* width: 60%;
-    padding-top: 2%; */
-}
-
 /* RESET */
 
 * {
@@ -57,10 +47,22 @@ img {
     margin: auto;
 }
 
+.logo {
+    margin: 0;
+}
+
 .wrapper {
     padding: 25px 0;
     width: 80%;
     margin: auto;
+}
+
+li {
+    display: inline-block;
+}
+
+.offer-detail  .three-cols li, .footer .links li {
+    display: list-item;
 }
 
 /* Common floating */
@@ -107,16 +109,12 @@ img {
     border-radius: 5px;
 }
 
+/* Common-text */
+
 /* comune a didascalia a btn gethubspotfree e didascalia numeri in .results*/
 
 .caption {
     font-size: 80%;
-}
-
-/* Common-text */
-
-.sub-button {
-    font-size: 70%;
 }
 
 p {
@@ -140,8 +138,7 @@ nav {
     padding: 0 10px;
 }
 
-nav li, .logo {
-    display: inline-block;
+nav li {
     margin-right: 10px;
 }
 
@@ -185,14 +182,11 @@ li:last-child {
     border-right: 2px solid #32495b;
 }
 
-nav .floater:last-child {
-    text-align: right;
-}
-
 /* test */
 
-.nav-logo .floater:last-child {
+.navbar .floater:last-child {
     text-align: right;
+    margin-right: 0;
 }
 
 /* END Navbar */
@@ -276,10 +270,6 @@ nav .floater:last-child {
     margin-bottom: 20px;
 }
 
-.fullscreen-offer li {
-    display: inline-block;
-}
-
 .fullscreen-offer h4, .fullscreen-offer .bar {
     display: inline-block;
 }
@@ -288,20 +278,18 @@ nav .floater:last-child {
     box-shadow: 0 0 11px #eaf0f6;
     background-color: white;
     padding: 3%;
-    border-radius: 5px;
+    border-radius: 7px;
 }
 
 /* magari poi metto classe? */
-
+.offer-detail h3 {
+    padding-top: 25px;
+}
 .offer-detail h4 {
     text-transform: uppercase;
-    font-weight: bolder;
-    /* TEST */
-    /* padding: 10% 0; */
 }
 
 .offer-detail img {
-    /* TEST */
     height: 120px;
 }
 
@@ -388,28 +376,28 @@ footer .btn {
     padding: 3%;
 }
 
+footer * {
+    padding-right: 10px;
+}
+
+footer h5 {
+    font-size: 120%;
+    margin-bottom: 20px;
+}
+
 /* .languages {
     text-align: center;
     text-transform: capitalize;
 } */
 
 .languages {
+    margin-top: 30px;
     border-bottom: 1px solid white;
     text-align: center;
 }
 
-.languages li {
-    display: inline-block;
-}
-
 .social * {
     width: 18%;
-}
-
-/* reset */
-
-footer img {
-    margin: 0;
 }
 
 /* END FOOTER */
