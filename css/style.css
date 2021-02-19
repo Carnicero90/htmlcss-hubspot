@@ -24,30 +24,70 @@ body {
     line-height: 160%;
 }
 
-.text-container *, .results * {
-    padding: 15px 0;
+/* Padding */
+
+.text-container *, .results *, .floater *, .our-offer *, .partner * {
+    padding: 10px 0;
 }
 
-.our-offer *, .partner * {
-    padding: 10px 4px;
+.our-offer .fullscreen-offer *, .partner *, .offer-detail * {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-.fullscreen-offer h4, .bar, .partner img, .navbar li {
+header .logo {
+    padding-top: 25px;
+}
+
+.results .float-container {
+    padding: 0;
+}
+
+.results .floater * {
+    padding: 10px 20px;
+}
+
+section {
+    padding: 25px 0;
+}
+
+/* /Padding */
+
+/* Display */
+
+.fullscreen-offer h4, .bar, .partner img, .navbar li, .languages li, .social li, .btn {
     display: inline-block;
 }
 
-.our-offer img, .results img {
+.our-offer img, .results .four-cols *, footer span {
     display: block;
+}
+
+/* /Display */
+
+/* Text-align */
+
+.offer-detail, .slogan, .results, .languages, .fullscreen-offer .first, .btn {
+    text-align: center;
+}
+
+.offer-detail li {
+    text-align: left;
+}
+
+.navbar .floater:last-child {
+    text-align: right;
+}
+
+/* /Text-align */
+
+.our-offer img, .results img {
     margin: auto;
 }
 
 .wrapper {
     width: 80%;
     margin: auto;
-}
-
-section {
-    padding: 25px 0;
 }
 
 /* Common floating */
@@ -92,13 +132,7 @@ section {
     font-size: 80%;
 }
 
-.offer-detail, .slogan, .results, .languages, .fullscreen-offer .first {
-    text-align: center;
-}
 
-.navbar .floater:last-child {
-    text-align: right;
-}
 
 .text-container {
     width: 45%;
@@ -106,8 +140,6 @@ section {
 
 .btn {
     color: white;
-    display: inline-block;
-    text-align: center;
     padding: 20px;
     background-color: #fe775a;
     border-radius: 5px;
@@ -141,7 +173,6 @@ header {
 nav {
     height: 80px;
     line-height: 40px;
-    padding: 20px 0;
 }
 
 .search {
@@ -249,10 +280,6 @@ h1 {
     height: 130px;
 }
 
-.offer-detail li {
-    text-align: left;
-}
-
 .bar {
     border: 1px solid #899397;
     width: 60%;
@@ -276,13 +303,9 @@ h1 {
     border-left: 1px solid white;
 }
 
-.results .four-cols * {
-    display: block;
-}
-
 .big-num {
     font-size: 250%;
-    font-weight: bolder;
+    font-weight: 700;
 }
 
 .results .big-num::after {
@@ -296,7 +319,6 @@ h1 {
 
 .partner {
     width: 90%;
-    vertical-align: middle;
     margin: auto;
 }
 
@@ -326,26 +348,17 @@ footer {
     color: #cbd6e2;
 }
 
-footer * {
-    margin-bottom: 20px;
-}
-
-footer span {
-    display: block;
-}
-
 h5 {
     font-size: 130%;
     color: white;
 }
 
-.languages li, .social li {
-    padding-right: 25px;
-    display: inline-block;
-}
-
 .languages {
     border-bottom: 1px solid white;
+}
+
+.languages li, .social li {
+    padding-right: 25px;
 }
 
 /* END FOOTER */
