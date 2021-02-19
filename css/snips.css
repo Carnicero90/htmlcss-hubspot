@@ -1,0 +1,41 @@
+/* TEST */
+
+.infotext {
+    visibility: hidden;
+    width: 10em;
+    background-color: #f4f9fd;
+    padding: 5%;
+    border: 1px solid  #33475b;
+    border-radius: 0.5em;
+    position: absolute;
+    bottom: -50%;
+    left: 0%;
+    line-height: 100%;
+    transform: translate(0, +40%);
+/* roba recuperata dal mio esercizio sulle scarpe */
+}
+
+.infotext h5 {
+    font-size: 100%;
+    margin-bottom: 7px;
+    text-transform: uppercase;
+}
+.infotext li {
+    border-bottom: 1px solid #33475b;
+    color: #4b637a;
+}
+
+.dropdown {
+    position: relative;
+}
+.dropdown:hover .infotext {
+    visibility: visible;
+    cursor:pointer;
+}
+
+
+<span class="infotext"><h5>useful numbers</h5><ul>
+                                <li>Mail</li>
+                                <li>Fax</li>
+                                <li>IBAN</li>
+                            </ul></span>
