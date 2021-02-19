@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <meta name="HubSpot" content="Get HubSpot free (but not really)">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <title>HubSpot</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet">     <title>HubSpot</title>
 </head>
 
 <body>
@@ -25,18 +25,14 @@
                             <li><a href=""> <i class="fas fa-globe-europe"></i></a> </li>
                             <li class="divided"><a href="">English</a></li>
                             <!-- TEST -->
-                            <li class="dropdown"><a href="">Contact Us</a><span class="infotext"><h5>placeholder menu</h5><ul>
-                                <li>bla</li>
-                                <li>bla</li>
-                                <li>bla</li>
-                            </ul></span></li>
+                            <li class="dropdown"><a href="">Contact Us</a></li>
                         </ul>
                     </div>
                     <div class="floater two-cols">
                         <ul>
-                            <li id="search"><a href=""><i class="fas fa-search"></i></a></li>
+                            <li class="search"><a href=""><i class="fas fa-search"></i></a></li>
                             <li class="btn log-btn"><a href="">Log In</a></li>
-                            <li class="btn"><a href="#">GetHubspotFree</a></li>
+                            <li><a href="#" class="btn">GetHubspotFree</a></li>
                         </ul>
                     </div>
                 </div>
@@ -86,33 +82,27 @@
     <main>
         <section class="our-offer">
             <div class="wrapper">
+                <!-- Slogan -->
                 <div class="slogan">
                     <img src="img/integrations_illustration.webp" alt="cube">
                     <h2>Powerful Alone. Better Togehter.</h2>
                     <p>HubSpot offers a full stack of software for marketing, sales, and customer service, with a
                         completely free CRM at its core. They're powerful alone - but even better when used together.
                     </p>
-                    <!-- Fooorse la barretta nel p precedente è un simbolo strano -->
                 </div>
+                <!-- /Slogan -->
 
-                <div class="offer-detail">
+                <!-- <div class="offer-detail"> -->
                     <div class="fullscreen-offer">
                         <div class="float-container">
-                            <!-- two-cols è test, poi togli -->
-                            <div class="floater two-cols"><img src="img/crm-Illustration.svg" alt="book">
-                                <div class="test"><a href="" class="btn">Learn More</a></div>
+                            <div class="floater two-cols first"><img src="img/crm-Illustration.svg" alt="book">
+                                <a href="" class="btn">Learn More</a>
                             </div>
-                            <div class="floater two-cols">
+                            <div class="floater two-cols second">
                                 <h3>Free HubSpot CRM</h3>
                                 <p>Everything you need to organize, track, and build  better relationships with leads and customers. Yes, it's 100% free. JK!</p>
-                                <div class="float-container">
-                                    <div class="floater two-cols">
-                                        <h4>popular feature</h4>
-                                    </div>
-                                    <div class="floater two-cols">
+                                    <h4>popular feature</h4>
                                         <div class="bar"></div>
-                                    </div>
-                                </div>
 
                                 <ul>
                                     <li>Contact Insight</li>
@@ -176,7 +166,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                <!-- </div> -->
             </div>
         </section>
 
@@ -213,10 +203,9 @@
         <div class="wrapper">
 
             <section class="partner">
-                <!-- qua da vedere, tendenzialmente centro solo via padding, non so ancora -->
                 <div class="float-container">
                     <div class="floater two-cols">
-                        <h2>64,500</h2>
+                        <span class="big-num">64,500</span>
                         <!-- poi togli h2 e fai via font-size -->
                         <p>customers in over <b>100</b> countries growing their business with HubSpot</p>
                     </div>
@@ -292,7 +281,7 @@
                             <li><a href="">Get a Free Website Report</a></li>
                             <li><a href="">HubSpot Templates</a></li>
                             <li><a href="">Free Tools & Generators</a></li>
-                            <li class="btn"><a href="">Contact HubSpot Support</a></li>
+                            <li><a href="" class="btn">Contact HubSpot Support</a></li>
                             <li>
                                 <ul class="social">
                                     <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
