@@ -37,6 +37,7 @@ li:not(.offer-detail li, .links ul li), .fullscreen-offer h4, .bar, .partner img
 }
 
 .our-offer img, .results img {
+    display: block;
     margin: auto;
 }
 
