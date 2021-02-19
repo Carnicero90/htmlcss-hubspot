@@ -55,7 +55,7 @@ section {
 
 /* Display */
 
-.fullscreen-offer h4, .bar, .partner img, .navbar li, .languages li, .social li, .btn {
+.fullscreen-offer li, .fullscreen-offer h4, .bar, .partner img, .navbar li, .languages li, .social li, .btn {
     display: inline-block;
 }
 
